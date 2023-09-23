@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\HomeController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -32,7 +33,8 @@ Route::middleware('auth')->group(function () {
 
 
 Route::middleware(['role:admin'])->prefix('admin_panel')->group(function () {
-  Route::get('/', [HomeController::class, 'index'])->name('home');
+  Route::get('/', [HomeController::class, 'index'])->name('homeAdmin');
+  Route::resource('category', CategoryController::class);
 });
 
 require __DIR__ . '/auth.php';
