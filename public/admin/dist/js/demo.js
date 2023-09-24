@@ -10,14 +10,6 @@
 (function ($) {
   'use strict'
 
-  setTimeout(function () {
-    if (window.___browserSync___ === undefined && Number(localStorage.getItem('AdminLTE:Demo:MessageShowed')) < Date.now()) {
-      localStorage.setItem('AdminLTE:Demo:MessageShowed', (Date.now()) + (15 * 60 * 1000))
-      // eslint-disable-next-line no-alert
-      alert('You load AdminLTE\'s "demo.js", \nthis file is only created for testing purposes!')
-    }
-  }, 1000)
-
   function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1)
   }
@@ -525,7 +517,7 @@
   })
 
   var active_navbar_color = null
-  $('.main-header')[0].classList.forEach(function (className) {
+  $('.main-header')[0]?.classList.forEach(function (className) {
     if (navbar_all_colors.indexOf(className) > -1 && active_navbar_color === null) {
       active_navbar_color = className.replace('navbar-', 'bg-')
     }

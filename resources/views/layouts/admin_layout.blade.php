@@ -4,7 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Админ панель - @yield('title')</title>
-
+  
+  <!-- TinyMce -->
+  <script src="https://cdn.tiny.cloud/1/388vn3vt3ov8wxz8sz74hizzm4rpo9644usa5q2cfxvf3yle/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
@@ -83,7 +85,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="./index2.html" class="nav-link">
+                <a href="{{route('post.create')}}" class="nav-link">
                   <p>Добавить статью</p>
                 </a>
               </li>
