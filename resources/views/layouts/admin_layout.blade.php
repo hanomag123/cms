@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Админ панель - @yield('title')</title>
   
-  <!-- TinyMce -->
-  <script src="https://cdn.tiny.cloud/1/388vn3vt3ov8wxz8sz74hizzm4rpo9644usa5q2cfxvf3yle/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
@@ -27,6 +26,9 @@
   <link rel="stylesheet" href="/admin/plugins/daterangepicker/daterangepicker.css">
   <!-- summernote -->
   <link rel="stylesheet" href="/admin/plugins/summernote/summernote-bs4.min.css">
+  <!-- colorbox -->
+  <link rel="stylesheet" href="/admin/dist/css/colorbox.css">
+
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -168,8 +170,15 @@
 <!-- AdminLTE for demo purposes -->
 <script src="/admin/dist/js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="/admin/dist/js/pages/dashboard.js"></script>
+{{-- <script src="/admin/dist/js/pages/dashboard.js"></script> --}}
 
+<script src="/admin/dist/js/jquery.colorbox-min.js"></script>
+  <!-- TinyMce -->
+  <script src="https://cdn.tiny.cloud/1/388vn3vt3ov8wxz8sz74hizzm4rpo9644usa5q2cfxvf3yle/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+
+<script type="text/javascript" src="/packages/barryvdh/elfinder/js/standalonepopup.js"></script>
 <script src="/admin/plugins/admin.js"></script>
+
+
 </body>
 </html>

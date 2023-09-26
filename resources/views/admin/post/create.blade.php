@@ -48,6 +48,13 @@
               <div class="form-group">
                 <textarea name="text" class="editor form-control" placeholder="Текст статьи"></textarea>
               </div>
+
+              <div class="form-group">
+                <label for="feature_image">Изображение статьи</label>
+                <img src="" class="img-uploaded" alt=""> 
+                <input type="text" name="img" class="form-control" id="feature_image" readonly>
+                <a href="" class="popup_selector" data-inputid="feature_image">Выбрать изображение</a>
+              </div>
             </div>
             <!-- /.card-body -->
   
